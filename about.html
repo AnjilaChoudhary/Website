@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/1cdb028b04.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class=" sub-header"> 
+         <nav>
+            <a href="index.html"><img src="image/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true"  onclick="hideMenue()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true"  onclick="showMenue()"></i>
+         </nav>
+        <h1>About Us</h1>
+
+    </section>
+
+    <!-- cbout us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Transforming Students Into Industry Ready Professionals</h1>
+                <p>Established in the year 2001, GNIOT group of institutions has become one of the leading institutions for management and engineering programs worldwide. Our aim is to educate leaders who build a strong organization and wisely leverage the power of markets to create lasting value
+
+                </p>
+
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+           
+    
+            <div class="about-col">
+                <img src="image/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>"Welcome to Greater Noida Institute Of Technology, an institution dedicated to fostering academic excellence, personal growth, and lifelong learning. Established with a vision to empower students with knowledge and skills that transcend classroom boundaries,  stands as a beacon of higher education".
+        </p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+
+
+    <!-- javascript for toggle menue -->
+    <script>
+        var navLinks =document.getElementById("navLinks")
+
+        function showMenue(){
+            navLinks.style.right="0";
+        }
+        function hideMenue(){
+            navLinks.style.right="-200px";
+        }
+        
+        
+
+
+    </script>
+
+</body>
+</html>
